@@ -1,0 +1,27 @@
+{
+  "name": "real-time-chat-with-frends",
+  "version": "1.0.0",
+  "description": "Live Chat With Friends",
+  "main": "index.js",
+  "scripts": {
+    "test": "node.js, git command etc."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishingle29/Real-Time-Chat-with-Frends.git"
+  },
+  "keywords": [
+    "chat",
+    "with",
+    "friends."
+  ],
+  "author": "Ashish Ingle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashishingle29/Real-Time-Chat-with-Frends/issues"
+  },
+  "homepage": "https://github.com/ashishingle29/Real-Time-Chat-with-Frends#readme",
+  "dependencies": {
+    "socket.io": "^4.5.4"
+  }
+}
