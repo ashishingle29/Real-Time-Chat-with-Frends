@@ -4,7 +4,8 @@
   "description": "Live Chat With Friends",
   "main": "index.js",
   "scripts": {
-    "test": "node.js, git command etc."
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,10 @@
   },
   "homepage": "https://github.com/ashishingle29/Real-Time-Chat-with-Frends#readme",
   "dependencies": {
-    "socket.io": "^4.5.4"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1"
   }
 }
