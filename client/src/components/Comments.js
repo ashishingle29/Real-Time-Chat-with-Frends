@@ -6,7 +6,7 @@ const Comments = ({ socket, selectedUserId }) => {
   const [input, setInput] = useState("");
 
   async function sendComment() {
-    const result = await fetch("http://localhost:4000/comments", {
+    const result = await fetch("https://real-time-chat-with-frends-orvt.vercel.app/comments", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ body: input, authorId: selectedUserId }),
@@ -16,7 +16,7 @@ const Comments = ({ socket, selectedUserId }) => {
   }
 
   async function fetchComments() {
-    const result = await fetch("http://localhost:4000/comments");
+    const result = await fetch("https://real-time-chat-with-frends-orvt.vercel.app/comments");
     const comments = await result.json();
     setComments(comments);
   }

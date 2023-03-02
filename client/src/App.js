@@ -4,14 +4,14 @@ import Comments from "./components/Comments";
 import Header from "./components/Header";
 import io from "socket.io-client";
 
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect("https://real-time-chat-with-frends-orvt.vercel.app");
 
 function App() {
   const [users, setUsers] = useState([]);
   const [selectedUserId, setSelectedUserId] = useState("");
 
   async function fetchUsers() {
-    const result = await fetch("http://localhost:4000/users");
+    const result = await fetch("https://real-time-chat-with-frends-orvt.vercel.app/users");
     const users = await result.json();
 
     setUsers(users);

@@ -8,7 +8,7 @@ const { listComments, createComment } = require("./lib/comments");
 
 const io = require("socket.io")(http, {
     cors: {
-      origin: "http://localhost:3000",
+      origin: "https://real-time-chat-with-frends.vercel.app",
     },
   });
 
