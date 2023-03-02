@@ -8,7 +8,7 @@ const { listComments, createComment } = require("./lib/comments");
 
 const io = require("socket.io")(http, {
     cors: {
-      origin: "https://real-time-chat-with-frends.vercel.app",
+      origin: "http://localhost:3000",
     },
   });
 
@@ -19,7 +19,6 @@ app.use(cors());
 app.use(express.json());
 
 io.on("connection", (socket) => {
-  // console.log(socket)
     console.log(`⚡: ${socket.id} user just connected!`);
   
     socket.on("disconnect", () => {
